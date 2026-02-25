@@ -1,0 +1,12 @@
+[project]
+name = "tableau-hyper-extract-data"
+version = "0.1.0"
+description = "Download a datasource from Tableau Cloud/Server and extract data from its embedded Hyper file."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=7.2.0",
+    "python-dotenv>=1.2.1",
+    "tableauhyperapi>=0.0.24457",
+    "tableauserverclient>=0.40",
+]
