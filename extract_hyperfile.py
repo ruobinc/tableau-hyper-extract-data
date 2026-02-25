@@ -84,7 +84,7 @@ def read_hyper(hyper_path: str) -> None:
             table_name = TableName(table_names[-1].schema_name, table_names[-1].name)
             print(f"\nAll rows in {table_name}:")
             rows = conn.execute_list_query(query=f"SELECT * FROM {table_name}")
-            for row in rows:
+            for row in rows[:10]:
                 print(row)
 
         print("\nConnection closed.")
